@@ -1,0 +1,643 @@
+{
+  "summary": {
+    "config": "B_k5",
+    "chunk": 800,
+    "overlap": 150,
+    "k": 5,
+    "score": 96.2,
+    "dev_score": 95.2,
+    "holdout_score": 100.0,
+    "median_latency_s": 0.975,
+    "cost_per_query": 0.0004653884615384615,
+    "buckets": {
+      "right chunk retrieved but answer wrong/incomplete": 1
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What words were written on the little bottle?",
+      "expected": [
+        "drink me"
+      ],
+      "evidence": "drink me",
+      "answer": "The words written on the little bottle were \u201cDRINK ME\u201d.",
+      "chunk_ids": [
+        12,
+        53,
+        54,
+        13,
+        55
+      ],
+      "latency": 0.988304500002414,
+      "tokens_in": 1164,
+      "tokens_out": 13,
+      "cost": 0.0003817,
+      "passed": true,
+      "reason": "looked for ['drink me']",
+      "bucket": null
+    },
+    {
+      "id": 2,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What was written on the little cake?",
+      "expected": [
+        "eat me"
+      ],
+      "evidence": "eat me",
+      "answer": "The words \u201cEAT ME\u201d were beautifully marked in currants on the very small cake [chunk 17].",
+      "chunk_ids": [
+        17,
+        65,
+        81,
+        213,
+        14
+      ],
+      "latency": 0.820202499977313,
+      "tokens_in": 1180,
+      "tokens_out": 23,
+      "cost": 0.0004115,
+      "passed": true,
+      "reason": "looked for ['eat me']",
+      "bucket": null
+    },
+    {
+      "id": 3,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What is the name of Alice's cat?",
+      "expected": [
+        "dinah"
+      ],
+      "evidence": "dinah",
+      "answer": "The name of Alice's cat is Dinah [chunk 7, chunk 32].",
+      "chunk_ids": [
+        48,
+        108,
+        7,
+        107,
+        32
+      ],
+      "latency": 0.6937672999920323,
+      "tokens_in": 1254,
+      "tokens_out": 20,
+      "cost": 0.0004262,
+      "passed": true,
+      "reason": "looked for ['dinah']",
+      "bucket": null
+    },
+    {
+      "id": 4,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What did they use as mallets in the Queen's croquet game?",
+      "expected": [
+        "flamingo"
+      ],
+      "evidence": "flamingo",
+      "answer": "In the Queen's croquet game, they used live flamingoes as mallets [chunk 140].",
+      "chunk_ids": [
+        140,
+        138,
+        90,
+        91,
+        159
+      ],
+      "latency": 1.0315221999771893,
+      "tokens_in": 1136,
+      "tokens_out": 24,
+      "cost": 0.0004008,
+      "passed": true,
+      "reason": "looked for ['flamingo']",
+      "bucket": null
+    },
+    {
+      "id": 5,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What riddle does the Hatter ask Alice?",
+      "expected": [
+        "raven"
+      ],
+      "evidence": "writing-desk",
+      "answer": "The Hatter asks Alice, \u201cWhy is a raven like a writing-desk?\u201d [chunk 113]",
+      "chunk_ids": [
+        117,
+        113,
+        118,
+        112,
+        114
+      ],
+      "latency": 1.533687999995891,
+      "tokens_in": 1241,
+      "tokens_out": 23,
+      "cost": 0.0004298,
+      "passed": true,
+      "reason": "looked for ['raven']",
+      "bucket": null
+    },
+    {
+      "id": 6,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What is the Caterpillar smoking when Alice meets him?",
+      "expected": [
+        "hookah"
+      ],
+      "evidence": "hookah",
+      "answer": "The Caterpillar is smoking a long hookah [chunk 70].",
+      "chunk_ids": [
+        70,
+        71,
+        79,
+        74,
+        80
+      ],
+      "latency": 0.6735384999774396,
+      "tokens_in": 1144,
+      "tokens_out": 13,
+      "cost": 0.00037569999999999997,
+      "passed": true,
+      "reason": "looked for ['hookah']",
+      "bucket": null
+    },
+    {
+      "id": 7,
+      "type": "keyword",
+      "holdout": false,
+      "question": "Which animal falls asleep at the Mad Tea-Party and gets used as a cushion?",
+      "expected": [
+        "dormouse"
+      ],
+      "evidence": "dormouse",
+      "answer": "The Dormouse [chunk 111].",
+      "chunk_ids": [
+        111,
+        122,
+        128,
+        127,
+        117
+      ],
+      "latency": 0.7234251999761909,
+      "tokens_in": 1226,
+      "tokens_out": 10,
+      "cost": 0.0003928,
+      "passed": true,
+      "reason": "looked for ['dormouse']",
+      "bucket": null
+    },
+    {
+      "id": 8,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What does the Queen of Hearts keep shouting when she is angry?",
+      "expected": [
+        "off with"
+      ],
+      "evidence": "off with her head",
+      "answer": "When the Queen is angry, she keeps shouting \"Off with her head!\", \"Off with his head!\", or \"Off with their heads!\" [chunk 137, chunk 142].",
+      "chunk_ids": [
+        136,
+        216,
+        137,
+        147,
+        142
+      ],
+      "latency": 1.8636209000251256,
+      "tokens_in": 1160,
+      "tokens_out": 41,
+      "cost": 0.0004505,
+      "passed": true,
+      "reason": "looked for ['off with']",
+      "bucket": null
+    },
+    {
+      "id": 9,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What is the Knave of Hearts accused of stealing?",
+      "expected": [
+        "tarts"
+      ],
+      "evidence": "tarts",
+      "answer": "The Knave of Hearts is accused of stealing tarts [chunk 193].",
+      "chunk_ids": [
+        193,
+        188,
+        195,
+        210,
+        214
+      ],
+      "latency": 0.8449558000429533,
+      "tokens_in": 1233,
+      "tokens_out": 18,
+      "cost": 0.0004149,
+      "passed": true,
+      "reason": "looked for ['tarts']",
+      "bucket": null
+    },
+    {
+      "id": 10,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What animals were used as the balls in the croquet game?",
+      "expected": [
+        "hedgehog"
+      ],
+      "evidence": "hedgehog",
+      "answer": "Live hedgehogs were used as the balls in the croquet game [chunk 140].",
+      "chunk_ids": [
+        140,
+        141,
+        142,
+        90,
+        138
+      ],
+      "latency": 0.9234576000017114,
+      "tokens_in": 1112,
+      "tokens_out": 21,
+      "cost": 0.0003861,
+      "passed": true,
+      "reason": "looked for ['hedgehog']",
+      "bucket": null
+    },
+    {
+      "id": 11,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What was the label on the jar Alice took from a shelf while falling?",
+      "expected": [
+        "marmalade"
+      ],
+      "evidence": "orange marmalade",
+      "answer": "The label on the jar was \u201cORANGE MARMALADE\u201d [chunk 4].",
+      "chunk_ids": [
+        4,
+        12,
+        3,
+        17,
+        81
+      ],
+      "latency": 0.9393567999941297,
+      "tokens_in": 1149,
+      "tokens_out": 18,
+      "cost": 0.0003897,
+      "passed": true,
+      "reason": "looked for ['marmalade']",
+      "bucket": null
+    },
+    {
+      "id": 12,
+      "type": "keyword",
+      "holdout": true,
+      "question": "What does the White Rabbit take out of his waistcoat-pocket?",
+      "expected": [
+        "watch"
+      ],
+      "evidence": "watch out of its waistcoat",
+      "answer": "The White Rabbit takes a watch out of its waistcoat-pocket [chunk 2].",
+      "chunk_ids": [
+        2,
+        22,
+        50,
+        43,
+        193
+      ],
+      "latency": 0.6437597000040114,
+      "tokens_in": 1152,
+      "tokens_out": 17,
+      "cost": 0.0003881,
+      "passed": true,
+      "reason": "looked for ['watch']",
+      "bucket": null
+    },
+    {
+      "id": 13,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What kind of animal is Bill, who gets sent down the chimney?",
+      "expected": [
+        "lizard"
+      ],
+      "evidence": "lizard",
+      "answer": "Bill is a little Lizard [chunk 65].",
+      "chunk_ids": [
+        62,
+        61,
+        63,
+        65,
+        49
+      ],
+      "latency": 0.7010049999807961,
+      "tokens_in": 1249,
+      "tokens_out": 11,
+      "cost": 0.0004022,
+      "passed": true,
+      "reason": "looked for ['lizard']",
+      "bucket": null
+    },
+    {
+      "id": 14,
+      "type": "keyword",
+      "holdout": false,
+      "question": "What is the name of the dance the Gryphon and the Mock Turtle show Alice?",
+      "expected": [
+        "lobster quadrille"
+      ],
+      "evidence": "lobster quadrille",
+      "answer": "The name of the dance is the Lobster Quadrille [chunk 171].",
+      "chunk_ids": [
+        173,
+        174,
+        172,
+        171,
+        177
+      ],
+      "latency": 1.1177022999618202,
+      "tokens_in": 1245,
+      "tokens_out": 17,
+      "cost": 0.000416,
+      "passed": true,
+      "reason": "looked for ['lobster quadrille']",
+      "bucket": null
+    },
+    {
+      "id": 15,
+      "type": "keyword",
+      "holdout": true,
+      "question": "What does the Duchess's baby turn into?",
+      "expected": [
+        "pig"
+      ],
+      "evidence": "pig",
+      "answer": "The baby turned into a pig [chunk 108].",
+      "chunk_ids": [
+        100,
+        101,
+        99,
+        108,
+        97
+      ],
+      "latency": 1.2942650999757461,
+      "tokens_in": 1180,
+      "tokens_out": 13,
+      "cost": 0.0003865,
+      "passed": true,
+      "reason": "looked for ['pig']",
+      "bucket": null
+    },
+    {
+      "id": 16,
+      "type": "judge",
+      "holdout": false,
+      "question": "How does Alice end up in Wonderland?",
+      "expected": "She follows the White Rabbit (who has a watch and waistcoat) and falls down the rabbit-hole.",
+      "evidence": "rabbit-hole",
+      "answer": "Alice ends up following a White Rabbit with pink eyes after hearing it say, \"Oh dear! Oh dear! I shall be late!\" [chunk 1]. When the Rabbit took a watch out of its waistcoat-pocket and looked at it, Alice ran across the field after it out of curiosity and saw it pop down a large rabbit-hole under the hedge [chunk 2]. Without considering how she would get out again, Alice went down after it, and the rabbit-hole dipped suddenly down into a very deep well, which she fell down until she landed on a heap of sticks and dry leaves [chunk 3, chunk 8].",
+      "chunk_ids": [
+        2,
+        3,
+        8,
+        56,
+        1
+      ],
+      "latency": 1.0926371000241488,
+      "tokens_in": 1155,
+      "tokens_out": 130,
+      "cost": 0.0006715,
+      "passed": true,
+      "reason": "The actual answer correctly captures that Alice follows the White Rabbit (noting its waistcoat and watch) and falls down the rabbit-hole.",
+      "bucket": null
+    },
+    {
+      "id": 17,
+      "type": "judge",
+      "holdout": false,
+      "question": "Why does Alice start crying in the hall?",
+      "expected": "After eating the cake she grows to over nine feet tall, so she can't get through the little door into the garden; her tears make a pool.",
+      "evidence": "nine feet",
+      "answer": "Based on the provided text, Alice starts crying in the hall because she forgot the little golden key when she went to the door, and when she went back to the table for it, she found she could not possibly reach it [chunk 15]. After trying her best to climb up one of the legs of the table and tiring herself out, the poor little thing sat down and cried [chunk 15]. \n\nLater, after growing more than nine feet high, she tries to look through into the garden with one eye, realizes getting through is more hopeless than ever, and sits down to cry again [chunk 20].",
+      "chunk_ids": [
+        21,
+        20,
+        15,
+        57,
+        9
+      ],
+      "latency": 1.2521531999809667,
+      "tokens_in": 1151,
+      "tokens_out": 129,
+      "cost": 0.0006678000000000001,
+      "passed": true,
+      "reason": "The actual answer correctly captures the reason Alice cries, including the detail about growing over nine feet tall and realizing she cannot get through the door.",
+      "bucket": null
+    },
+    {
+      "id": 18,
+      "type": "judge",
+      "holdout": false,
+      "question": "What do the two sides of the Caterpillar's mushroom do?",
+      "expected": "One side makes her grow taller and the other side makes her grow shorter.",
+      "evidence": "one side will make you grow taller",
+      "answer": "One side will make you grow taller, and the other side will make you grow shorter [chunk 79, chunk 80].",
+      "chunk_ids": [
+        80,
+        79,
+        70,
+        74,
+        72
+      ],
+      "latency": 0.8962951999856159,
+      "tokens_in": 1166,
+      "tokens_out": 28,
+      "cost": 0.0004198,
+      "passed": true,
+      "reason": "The actual answer correctly identifies that one side makes you grow taller and the other side makes you grow shorter, matching the expected answer.",
+      "bucket": null
+    },
+    {
+      "id": 19,
+      "type": "judge",
+      "holdout": false,
+      "question": "Why is it always tea-time at the Mad Tea-Party?",
+      "expected": "The Hatter quarrelled with Time when the Queen said he was murdering the time while singing, so Time stopped and it is always six o'clock (tea-time).",
+      "evidence": "murdering the time",
+      "answer": "It is always tea-time because the Hatter quarreled with Time, and ever since then Time won't do a thing the Hatter asks, leaving it always six o'clock [chunk 121].",
+      "chunk_ids": [
+        121,
+        119,
+        123,
+        111,
+        124
+      ],
+      "latency": 1.46725940000033,
+      "tokens_in": 1247,
+      "tokens_out": 44,
+      "cost": 0.0004841,
+      "passed": true,
+      "reason": "The actual answer correctly captures that the Hatter quarreled with Time, resulting in Time stopping and making it permanently tea-time.",
+      "bucket": null
+    },
+    {
+      "id": 20,
+      "type": "judge",
+      "holdout": true,
+      "question": "What happens when the Cheshire Cat disappears?",
+      "expected": "It vanishes slowly, starting with the tail and ending with the grin, which stays visible after the rest of the cat is gone.",
+      "evidence": "grin without a cat",
+      "answer": "When the Cheshire Cat disappears, it does so in different ways:\n* Sometimes it simply vanishes [chunk 107, chunk 108].\n* Another time, it vanishes quite slowly, beginning with the end of its tail and ending with the grin, which remains for some time after the rest of it has gone [chunk 109].\n* On another occasion, its head begins fading away the moment the executioner goes off [chunk 150].",
+      "chunk_ids": [
+        108,
+        109,
+        150,
+        143,
+        107
+      ],
+      "latency": 1.2180971000343561,
+      "tokens_in": 1217,
+      "tokens_out": 99,
+      "cost": 0.0006126,
+      "passed": true,
+      "reason": "The actual answer correctly captures the main point that the Cheshire Cat vanishes slowly starting with the tail and ending with the grin.",
+      "bucket": null
+    },
+    {
+      "id": 21,
+      "type": "judge",
+      "holdout": true,
+      "question": "What is the Caucus-race and who wins it?",
+      "expected": "A race where everyone runs around in a circle starting and stopping whenever they like; the Dodo declares everybody has won and Alice hands out comfits as prizes.",
+      "evidence": "caucus-race",
+      "answer": "The Caucus-race is a race where the Dodo marks out a race-course in a sort of circle (the exact shape doesn't matter), and all the party are placed along the course [chunk 40]. There is no \"One, two, three, and away,\" but they begin running when they like and leave off when they like [chunk 40, chunk 41]. \n\nAccording to the Dodo, _everybody_ wins the race, and all must have prizes [chunk 41].",
+      "chunk_ids": [
+        40,
+        41,
+        39,
+        42,
+        35
+      ],
+      "latency": 1.24585260002641,
+      "tokens_in": 1196,
+      "tokens_out": 110,
+      "cost": 0.0006338,
+      "passed": true,
+      "reason": "The actual answer correctly identifies the nature of the Caucus-race and that everybody wins according to the Dodo.",
+      "bucket": null
+    },
+    {
+      "id": 22,
+      "type": "judge",
+      "holdout": false,
+      "question": "At the trial, why does the King think the Knave is guilty because of the verses?",
+      "expected": "The verses aren't in the Knave's handwriting and aren't signed; the King says not signing them means he meant mischief, otherwise he'd have signed like an honest man.",
+      "evidence": "handwriting",
+      "answer": "At the trial, the King believes the verses prove the Knave's guilt because he connects lines from the verses to the tarts. Specifically, when the White Rabbit reads the line \u201c_I gave her one, they gave him two_,\u201d the King states, \u201cwhy, that must be what he did with the tarts, you know\u201d [chunk 214, chunk 215]. Later, pointing to the tarts on the table when another line mentions \u201c_they all returned from him to you_,\u201d the King says triumphantly, \u201cWhy, there they are! Nothing can be clearer than _that_\u201d [chunk 215].",
+      "chunk_ids": [
+        214,
+        210,
+        211,
+        215,
+        193
+      ],
+      "latency": 1.2176423000055365,
+      "tokens_in": 1277,
+      "tokens_out": 138,
+      "cost": 0.0007281,
+      "passed": false,
+      "reason": "The actual answer misses the expected point about the lack of a signature being evidence of mischief, focusing instead on the King's interpretation of specific lines of the verse.",
+      "bucket": "right chunk retrieved but answer wrong/incomplete"
+    },
+    {
+      "id": 23,
+      "type": "judge",
+      "holdout": false,
+      "question": "How does the story end?",
+      "expected": "At the trial Alice grows to full size, says they're nothing but a pack of cards, the cards fly at her, and she wakes up on the bank with her sister - it was a dream.",
+      "evidence": "pack of cards",
+      "answer": "The story ends with Alice telling her sister about her curious dream of strange adventures [chunk 217]. Her sister kisses her, tells her to run in to tea because it is getting late, and Alice gets up and runs off thinking about what a wonderful dream it has been [chunk 218]. Her sister sits still, watching the setting sun and dreaming about little Alice and her wonderful adventures, picturing how Alice will grow up, keep the loving heart of her childhood, and tell her own children strange tales of the dream of Wonderland long ago [chunk 218, chunk 221, chunk 222].",
+      "chunk_ids": [
+        222,
+        217,
+        218,
+        221,
+        44
+      ],
+      "latency": 1.1037337000016123,
+      "tokens_in": 1015,
+      "tokens_out": 131,
+      "cost": 0.000632,
+      "passed": true,
+      "reason": "The actual answer correctly captures the ending of the story by describing Alice waking up from her dream and sharing it with her sister, which aligns with the expected answer.",
+      "bucket": null
+    },
+    {
+      "id": 24,
+      "type": "refusal",
+      "holdout": false,
+      "question": "What is the capital of France?",
+      "expected": "I don't know",
+      "answer": "I don't know - the provided text does not cover that.",
+      "chunk_ids": [
+        31,
+        24,
+        38,
+        30,
+        39
+      ],
+      "latency": 0.9608218999928795,
+      "tokens_in": 1214,
+      "tokens_out": 14,
+      "cost": 0.00039919999999999995,
+      "passed": true,
+      "reason": "should refuse (not in the book)",
+      "bucket": null
+    },
+    {
+      "id": 25,
+      "type": "refusal",
+      "holdout": false,
+      "question": "What happens to the Jabberwock in the poem Jabberwocky?",
+      "expected": "I don't know",
+      "answer": "I don't know - the provided text does not cover that.",
+      "chunk_ids": [
+        184,
+        185,
+        77,
+        120,
+        159
+      ],
+      "latency": 0.8220605999813415,
+      "tokens_in": 1201,
+      "tokens_out": 14,
+      "cost": 0.00039529999999999996,
+      "passed": true,
+      "reason": "should refuse (not in the book)",
+      "bucket": null
+    },
+    {
+      "id": 26,
+      "type": "refusal",
+      "holdout": true,
+      "question": "What year was Lewis Carroll born?",
+      "expected": "I don't know",
+      "answer": "I don't know - the provided text does not cover that.",
+      "chunk_ids": [
+        0,
+        114,
+        105,
+        56,
+        115
+      ],
+      "latency": 0.7256534000043757,
+      "tokens_in": 1228,
+      "tokens_out": 14,
+      "cost": 0.0004034,
+      "passed": true,
+      "reason": "should refuse (not in the book)",
+      "bucket": null
+    }
+  ]
+}
