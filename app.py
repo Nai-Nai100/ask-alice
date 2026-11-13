@@ -118,7 +118,7 @@ def friendly_error(e):
     if "timeout" in type(e).__name__.lower() or "timeout" in text or "timed out" in text:
         return "timeout", "The AI service took too long to answer. Please try again in a minute."
     if "api key" in text or "api_key" in text or "permission" in text or "401" in text or "403" in text:
-        return "auth_error", "The app can't reach the AI service right now (key problem). The owner has been notified - please try later."
+        return "auth_error", "The app can't reach the AI service right now (key problem). Please try again later."
     if "429" in text or "quota" in text or "exhausted" in text:
         return "upstream_rate_limit", "The AI service is busy right now. Please wait a minute and try again."
     return "error", "Something went wrong on our side. Please try again later."
@@ -198,15 +198,16 @@ with st.sidebar:
     st.divider()
     st.write("**Failure simulation (for testing)**")
     failure = st.radio("Mode", ["None", "Revoked API key", "Timeout"], label_visibility="collapsed")
+    st.divider()
+    page = st.radio("Page", ["Ask", "Usage"])
 
-ask_tab, usage_tab = st.tabs(["Ask", "Usage"])
-
-with ask_tab:
+if page == "Ask":
     if "history" not in st.session_state:
         st.session_state.history = []
     for role, text in st.session_state.history:
         st.chat_message(role).write(text)
 
+    # chat_input at the top level (not inside tabs) stays pinned to the bottom
     question = st.chat_input("Ask something about the book...")
     if question:
         st.chat_message("user").write(question)
@@ -214,6 +215,5 @@ with ask_tab:
             reply = handle_question(user, question, failure)
         st.chat_message("assistant").write(reply)
         st.session_state.history += [("user", question), ("assistant", reply)]
-
-with usage_tab:
+else:
     usage_page()
